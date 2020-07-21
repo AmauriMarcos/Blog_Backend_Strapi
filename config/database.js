@@ -14,7 +14,7 @@ module.exports = ({ env }) => ({
         "database": "${process.env.DATABASE_NAME}"
       },
       options: {
-        authenticationDatabase: env('AUTHENTICATION_DATABASE', null),
+      /*   authenticationDatabase: env('AUTHENTICATION_DATABASE', null), */
         ssl: env.bool('DATABASE_SSL', true),
       },
     },
